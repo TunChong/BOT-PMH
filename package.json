@@ -1,0 +1,17 @@
+{
+  "name": "pmh-line-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "LINE bot tự đăng nhập hệ thống PMH và lấy mã phiếu mua hàng.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "check": "node --check src/server.js && node --check src/pmh-client.js && node --check src/line-client.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "playwright": "1.62.1"
+  }
+}
